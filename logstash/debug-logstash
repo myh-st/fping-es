@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/share/logstash/bin/logstash --path.settings=/etc/logstash -f /etc/logstash/conf.d/fping2es.conf
