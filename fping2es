@@ -1,0 +1,11 @@
+#!/bin/bash
+if ! command -v fping &> /dev/null
+then
+    yum install fping -y
+fi
+mkdir -p round{1,2,3}
+NOW=$(date +"%m-%d-%Y")
+fping -f hosts.txt > round1/result-$NOW.csv
+sed -i 's/ is /\,/g' round1/result-$NOW.csv
+sed -i '1i ip,state' round1/result-$NOW.csv
+

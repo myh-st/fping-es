@@ -1,0 +1,11 @@
+#!/bin/bash
+if ! command -v fping &> /dev/null
+then
+    yum install fping -y
+fi
+mkdir -p results
+NOW=$(date +"%m-%d-%Y")
+fping -f hosts.txt 2>&1 | tee .result
+grep "alive" .result > results/alive-$NOW.txt
+grep "unreachable" .result > results/unreachable-$NOW.txt
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+if ! command -v fping &> /dev/null
+then
+    yum install fping -y
+fi
+mkdir -p pre-test shutdown post-test
+NOW=$(date +"%m-%d-%Y")
+curl -XDELETE localhost:9200/post-test\*
+fping -f hosts.txt > post-test/result-$NOW.csv
+# sed -i 's/ is /\,/g' round3/result-$NOW.csv
+# sed -i '1i ip,state' round3/result-$NOW.csv
