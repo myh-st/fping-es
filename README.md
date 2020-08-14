@@ -28,9 +28,8 @@ Logstash Port 9600
 service logstash status/start/stop/restart
 config path: /etc/logstash/conf.d/fping2es.conf
 
-
-fping.sh and run.sh read a hosts.txt file line by line.if you want to edit ip please edit hosts.txt file         
-
+## Script ##
+fping.sh and run.sh read a hosts.txt file line by line.if you want to edit ip please edit hosts.txt file        
 
 Script path: 
 /opt/fping-es  
