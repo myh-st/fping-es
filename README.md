@@ -1,9 +1,14 @@
 ## Installation ##
 1.Download TMITH - OVF from Microsoft Teams General > TMI > TMITH - OVF
+
 2.Import OVF to VMware
+
 3.Remove old project from /opt via command : rm -rf fping-es ssh-es
+
 4.Download fping-es.zip and ssh-es.zip from Microsoft Teams Microsoft Teams General > TMI > TMITH - Code
+
 5.Copy fping-es.zip and ssh-es.zip to /opt 
+
 6.Unzip fping-es.zip and ssh-es.zip via command : unzip fping-es.zip && ssh-es.zip
 
 ## ELK Services ##
