@@ -30,8 +30,8 @@ config path: /etc/logstash/conf.d/fping2es.conf
 
 
 ################################################################
-##  fping.sh and run.sh read a hosts.txt file line by line.   ##
-##	if you want to edit ip please edit hosts.txt file         ##
+  fping.sh and run.sh read a hosts.txt file line by line.   
+	if you want to edit ip please edit hosts.txt file         
 ################################################################
 
 Script path: 
